@@ -74,7 +74,17 @@ Account::Account(Account& obj) {
 	if (obj.numItems){
 		this->items = new Item*[obj.numItems];
 		for (unsigned int i = 0; i < obj.numItems; i++) {
-			this->items[i] = new Item(*obj.items[i]);
+
+			if(dynamic_cast<Deals*>(obj.items[i])){
+				this->items[i] = new Deals(*dynamic_cast<Deals*>(obj.items[i]));
+			}
+			else if (dynamic_cast<FoodAndBeverages*>(obj.items[i])){
+				this->items[i] = new FoodAndBeverages(*dynamic_cast<FoodAndBeverages*>(obj.items[i]));
+			}
+			else {
+				this->items[i] = new ToysAndHobbies(*dynamic_cast<ToysAndHobbies*>(obj.items[i]));
+			}
+
 		}
 	}
 	else {

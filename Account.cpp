@@ -1,14 +1,14 @@
 /******************************************************************************
 Filename:			Account.cpp
-Version:			2.1
+Version:			2.2
 Author:				Victor Fernandes
 Student No.:			040772243
 Course Name/Number:		CST8219 - C++ Programming
 Lab Section:			302
 Assignment #:			3
 Assignment Name:		FleaBay in C++
-Due Date:			October 22, 2015
-Submission Date:		October 21, 2015
+Due Date:			December 5, 2015
+Submission Date:		--
 Professor:			Andrew Tyler
 Purpose:			The Account class is used to manage each Account and their
 				list of Items, as well as authenticate and generate
@@ -60,7 +60,7 @@ Function Name:			Account::Account()
 Purpose:			Copy constructor for Account
 In Parameters:			Account&
 Out Parameters:			N/A
-Version:			1.0
+Version:			1.1
 Author:				Victor Fernandes
 ******************************************************************************/
 Account::Account(Account& obj) {
@@ -127,7 +127,7 @@ Purpose:			Prompts the user to add multiple items to the Account's
 				lets the user change their password.
 In Parameters:			N/A
 Out Parameters:			N/A
-Version:			1.1
+Version:			1.2
 Author:				Victor Fernandes
 ******************************************************************************/
 void Account::AddItem(){

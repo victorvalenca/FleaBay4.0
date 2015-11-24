@@ -8,7 +8,7 @@ Lab Section:			302
 Assignment #:			3
 Assignment Name:		FleaBay in C++
 Due Date:			December 5, 2015
-Submission Date:		October 21, 2015
+Submission Date:		--
 Professor:			Andrew Tyler
 Purpose:			The Food/Beverage class is a subclass of Items, 
 				and contains an expiry date, description, and price.

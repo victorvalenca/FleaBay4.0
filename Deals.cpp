@@ -8,7 +8,7 @@ Lab Section:			302
 Assignment #:			3
 Assignment Name:		FleaBay in C++
 Due Date:			December 5, 2015
-Submission Date:		October 21, 2015
+Submission Date:		--
 Professor:			Andrew Tyler
 Purpose:			The Deals class is a subclass of Items. It contains
 				a closure (expiry date), description, and price.

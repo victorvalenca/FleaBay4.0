@@ -1,14 +1,14 @@
 /******************************************************************************
 Filename:			FleaBay.cpp
-Version:			2.1
+Version:			2.2
 Author:				Victor Fernandes
 Student No.:			040772243
 Course Name/Number:		CST8219 - C++ Programming
 Lab Section:			302
 Assignment #:			3
 Assignment Name:		FleaBay in C++
-Due Date:			October 22, 2015
-Submission Date:		October 21, 2015
+Due Date:			December 5, 2015
+Submission Date:		--
 Professor:			Andrew Tyler
 Purpose:			The FleaBay class is used to manage Accounts and their
 				list of Items, authenticate, and generate
@@ -63,8 +63,8 @@ Author:				Victor Fernandes
 ostream& operator<<(ostream& os ,FleaBay& f) {
 	if (f.numAccounts) {
 		for (unsigned int i = 0; i < f.numAccounts; i++){
-				os << "Account ID: " << f.accounts[i]->getID() << endl
-					 << *f.accounts[i] << endl;
+			os << "Account ID: " << f.accounts[i]->getID() << endl
+				<< *f.accounts[i] << endl;
 		}
 	}
 	else {

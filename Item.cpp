@@ -1,14 +1,14 @@
 /******************************************************************************
 Filename:			Item.cpp
-Version:			2.1
+Version:			2.2
 Author:				Victor Fernandes
 Student No.:			040772243
 Course Name/Number:		CST8219 - C++ Programming
 Lab Section:			302
 Assignment #:			3
 Assignment Name:		FleaBay in C++
-Due Date:			October 22, 2015
-Submission Date:		October 21, 2015
+Due Date:			December 5, 2015
+Submission Date:		--
 Professor:			Andrew Tyler
 Purpose:			The Item class holds information for an item an Account
 				object may hold. It contains a description, price, and
@@ -70,7 +70,7 @@ Function Name:			Item::operator<<
 Purpose:			Overloaded << operator for std::ostream
 In Parameters:			ostream&, Item&
 Out Parameters:			ostream&
-Version:			1.0
+Version:			1.1
 Author:				Victor Fernandes
 ******************************************************************************/
 ostream& operator<<(ostream& os, Item& it) {

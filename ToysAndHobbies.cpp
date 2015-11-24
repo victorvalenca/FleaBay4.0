@@ -8,7 +8,7 @@ Lab Section:			302
 Assignment #:			3
 Assignment Name:		FleaBay in C++
 Due Date:			December 5, 2015
-Submission Date:		October 21, 2015
+Submission Date:		--
 Professor:			Andrew Tyler
 Purpose:			The ToysAndhobbies class is a subclass of Items, 
 				and contains a description, price, and target age group.

@@ -8,7 +8,7 @@ Lab Section:			302
 Assignment #:			3
 Assignment Name:		FleaBay in C++
 Due Date:			December 5, 2015
-Submission Date:		--
+Submission Date:		November 25, 2015
 Professor:			Andrew Tyler
 Purpose:			The Item class holds information for an item an Account
 				object may hold. It contains a description, price, and
@@ -16,8 +16,8 @@ Purpose:			The Item class holds information for an item an Account
 ******************************************************************************/
 #include <iostream>
 #include <iomanip>
-
 using namespace std;
+
 #include "Item.h"
 
 

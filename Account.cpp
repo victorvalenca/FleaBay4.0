@@ -8,7 +8,7 @@ Lab Section:			302
 Assignment #:			3
 Assignment Name:		FleaBay in C++
 Due Date:			December 5, 2015
-Submission Date:		--
+Submission Date:		November 25, 2015
 Professor:			Andrew Tyler
 Purpose:			The Account class is used to manage each Account and their
 				list of Items, as well as authenticate and generate
@@ -74,7 +74,6 @@ Account::Account(Account& obj) {
 	if (obj.numItems){
 		this->items = new Item*[obj.numItems];
 		for (unsigned int i = 0; i < obj.numItems; i++) {
-
 			if(dynamic_cast<Deals*>(obj.items[i])){
 				this->items[i] = new Deals(*dynamic_cast<Deals*>(obj.items[i]));
 			}
@@ -84,7 +83,6 @@ Account::Account(Account& obj) {
 			else {
 				this->items[i] = new ToysAndHobbies(*dynamic_cast<ToysAndHobbies*>(obj.items[i]));
 			}
-
 		}
 	}
 	else {
@@ -148,14 +146,12 @@ void Account::AddItem(){
 		cout << "(P) Change password" << endl
 		     << "(Y) Add an item" << endl
 			 << "(Any key) Return to previous menu" << endl;
-
 		fflush(stdin);
 		cin >> user_select;
 
 		if (toupper(user_select) == 'Y'){
 			char desc_buffer[100] = {'\0'};
 			double price_buffer;
-			Item *newItem;
 			cout << "Enter the new Item description: ";
 			fflush(stdin);
 			cin.getline(desc_buffer, 100);
@@ -176,21 +172,20 @@ void Account::AddItem(){
 					cout << endl << "Incorrect value. Try again with a proper number";
 					continue;
 				}
-			
 				if (price_buffer == -1.0){
 					cancelled = true;
 					break; // Break out of loop and cancel
 				}
-
 				price_ok = true;
-
 			}
 
 			if (cancelled){
 				return; //Check if user cancelled item entry and exit function if so
 			} 
 			
+			Item *newItem;
 			bool category_check = false;
+
 			while (!category_check){
 				cout << "What is the item's category?" << endl
 					<< "F) Food/Beverages" << endl
@@ -242,7 +237,6 @@ void Account::AddItem(){
 				items = newItems;
 			}
 			items[numItems++] = newItem;
-		
 		}
 		else if (toupper(user_select) == 'P'){
 			char passwd_buffer[80] = {'\0'};

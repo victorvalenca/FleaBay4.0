@@ -8,7 +8,7 @@ Lab Section:			302
 Assignment #:			3
 Assignment Name:		FleaBay in C++
 Due Date:			December 5, 2015
-Submission Date:		--
+Submission Date:		November 25, 2015
 Professor:			Andrew Tyler
 Purpose:			The FleaBay class is used to manage Accounts and their
 				list of Items, authenticate, and generate
@@ -199,7 +199,6 @@ bool FleaBay::AddNewAccount(){
 		accounts[numAccounts] = newEntry;
 		numAccounts++;
 	}
-
 	return true;
 }
 
